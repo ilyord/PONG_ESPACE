@@ -108,6 +108,17 @@ body{
     color: #fb8d39;
     line-height: 1.1;
 }
+
+.left,.right{
+    outline: 1px solid rgb(255, 255, 255);
+    background-image: url('./skins/wimbledon/Ardois.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+
 .score{
     font-size: 8vmin;
     font-weight: 800;
