@@ -1,1 +1,1 @@
-https://ilyord.github.io/PONG_ESPACE/index.html
+https://ilyord.github.io/PONG_ESPACE
