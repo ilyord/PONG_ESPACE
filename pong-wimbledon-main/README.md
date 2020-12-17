@@ -1,9 +1,4 @@
-# Encore un pong
-
-
-Pour jouer...
-
-### Rafael
+### SOYOUZ
 touches A / Q 
-### Roger
+### ARIANE
 touches P / M 
