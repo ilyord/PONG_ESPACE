@@ -3,15 +3,15 @@ class Perso extends ElementHtml{
         super($html);
         this.$bulle=$html.find(".bulle");
         this.mots=[
-            "Bof"
-            ,"On s'emmerde un peu"
-            ,"Fait chaud"
-            ,"..."
-            ,"Rolland Garros c'est mieux"
-            ,"zyva l'autre avec sa raquette"
-            ,"sont pas doués"
-            ,"Ya koi ce soir à la télé?"
-            ,"vive moi!"
+            ,"Cringe..."
+            ,"J'ai besoin d'espace"
+            ,"Fait froid"
+            ,"Un ptit kebab apres le match ?"
+            ,"Trop bien le dernier episode de Dora"
+            ,"Club Pinguin c'est trop bien !!"
+            ,"Hello_World"
+            ,"Affronte mon regard"
+            ,"Je passe en mode FURAX !!"
         ];
     }
     parle(blabla){

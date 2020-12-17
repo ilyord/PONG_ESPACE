@@ -2,11 +2,11 @@ html{
     margin: 0;
     padding:0;
     overflow: hidden;
-    --couleur-fond: #305535;
+    --couleur-fond: #000000;
     --couleur-elements:#FFF;
     --couleur-on-sait-pas-trop:#808080;
     --couleur-on-sait-pas-trop-foncee:#222;
-    --couleur-erreur:#F00;
+    --couleur-erreur:rgb(255, 255, 255);
     --couleur-succes:#0f0;
 
 }
@@ -37,10 +37,18 @@ body{
     align-items: center;
 }
 
+.left,.right{
+    outline: 1px solid rgb(255, 255, 255);
+    background-image: url('./skins/wimbledon/Ardois.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .terrain{
     transition: filter 1s, transform 1s;
-    width:120vmin;
-    height: calc( 9/16 * 90vmin );
+    width:90vmin;
+    height: calc( 8.9/16 * 90vmin );
     flex-shrink: 0;
     border: 1px solid transparent;
     border-top-color: var(--couleur-elements);
@@ -64,10 +72,8 @@ body{
     display: flex;
     position: absolute;
     top: 0;
-    width: 20%;
+    width: 100%;
     height: 25vmin;
-    background-image: url("./skins/wimbledon/logo.png");
-    background-position: center;
 }
 .haut > *{
     width: 33%;
@@ -81,24 +87,27 @@ body{
 .bas{
     z-index: 3;
     position: absolute;
-    bottom: -20;
-    width: 61%;
-    height: 20vmin;
+    bottom: -25%;
+    width: 100%;
+    height: 50vmin;
     background-image: url('./skins/wimbledon/gradin.png');
-    background-size: 1500px;
-    display: cover;
+    background-size: 60px;
+    display: flex;
     justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 }
 .bas .persos{
-    max-width: 600px;
+    max-width: 900px;
     display: flex;
     justify-content: space-around;
 }
 
 .logo{
-    width: 1vmin;
-    height: 1vmin;
-   
+    width: 15vmin;
+    height: 15vmin;
+    background-image: url("./skins/wimbledon/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -107,23 +116,13 @@ body{
     mix-blend-mode: hard-light;
     font-size: 5vmin;
     font-weight: 700;
-    color: #fb8d39;
+    color: #ffffff;
     line-height: 1.1;
-    
-}
-.left,.right{
-    outline: 1px solid rgb(255, 255, 255);
-    background-image: url('./skins/wimbledon/Ardois.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .score{
-    
     font-size: 8vmin;
     font-weight: 800;
 }
-
 
 
 .raquette{
@@ -138,11 +137,11 @@ body{
     transition: transform 0.2s;
 }
 .raquette.joueur1{
-    left: 0%;
+    left: -6%;
     background-image: url("./skins/wimbledon/joueur1.png");
 }
 .raquette.joueur2{
-    right: 0%;
+    right: -6%;
     background-image: url("./skins/wimbledon/joueur2.png");
 }
 .raquette[sens='monte']{
